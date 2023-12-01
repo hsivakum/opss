@@ -46,7 +46,7 @@ const ScmFormApp = () => {
       url: scmUrl,
       type: scmType,
       isPrivate,
-      encryptedToken: encryptToken ? encryptToken : "",
+      encryptedToken: isPrivate ? encryptToken : "",
     };
 
     // Make API call using Axios
